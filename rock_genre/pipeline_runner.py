@@ -57,7 +57,7 @@ def process_artists_and_save(driver, artists: list, genre: str, album_limit: int
     return len(all_artists)
 
 
-def main(artist_limit=ARTIST_LIMIT, album_limit=ALBUM_LIMIT, headless=True):
+def main(artist_limit=ARTIST_LIMIT, album_limit=ALBUM_LIMIT, headless=False):
     """Executes the main scraping workflow to collect artist and album data.
 
     Initializes the Selenium WebDriver, navigates to the genre page, collects
@@ -106,4 +106,4 @@ def main(artist_limit=ARTIST_LIMIT, album_limit=ALBUM_LIMIT, headless=True):
 
 
 if __name__ == "__main__":
-    main(artist_limit=ARTIST_LIMIT, album_limit=ALBUM_LIMIT, headless=True)
+    main(artist_limit=ARTIST_LIMIT, album_limit=ALBUM_LIMIT, headless=False)
