@@ -50,7 +50,7 @@ def init_driver(headless: bool = True):
     return driver
 
 
-def random_delay():
+def random_delay() -> None:
     """Pauses execution for a random duration within defined limits.
 
     The pause duration is uniformly distributed between DELAY_MIN and DELAY_MAX

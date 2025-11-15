@@ -183,9 +183,8 @@ def get_artist_data(
             href = a.get_attribute("href")
 
             # Ensure the link is not empty and is unique.
-            if href:
-                if href not in websites:
-                    websites.append(href)
+            if href and href not in websites:
+                websites.append(href)
     except Exception as e:
         print(f"[WARN] Failed to extract websites: {e}")
         websites = []

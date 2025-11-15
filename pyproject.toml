@@ -1,7 +1,7 @@
 [project]
 name = "discogs-scraper"
 version = "0.1.0"
-description = "Add your description here"
+description = "Scraper from Discogs.com"
 readme = "README.md"
 requires-python = ">=3.12"
 authors = [
@@ -46,5 +46,5 @@ disallow_any_generics = true
 no_implicit_optional = true
 show_error_codes = true
 pretty = true
-packages = ["sales_cli"]
+packages = ["rock_genre"]
 explicit_package_bases = true
